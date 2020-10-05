@@ -1,0 +1,45 @@
+.Toolbar {
+	height: 56px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: rgb(54, 47, 186);
+	background: linear-gradient(0deg, rgba(54, 47, 186, 1) 0%, rgba(51, 49, 94, 1) 100%);
+}
+
+.Toolbar nav {
+	display: flex;
+	height: 100%;
+}
+.Toolbar * {
+	color: white;
+}
+
+.Logo {
+	height: 100%;
+	width: 60px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.Logo:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Toolbar nav a {
+	height: 100%;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.Toolbar nav a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}

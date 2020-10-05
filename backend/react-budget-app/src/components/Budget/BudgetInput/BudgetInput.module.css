@@ -1,0 +1,93 @@
+.BudgetInput {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+.BtnContainer {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+.BtnContainer button {
+	height: 50px;
+	width: 70px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.Minus {
+	background-color: rgba(207, 0, 15, 0.7);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.Minus:hover {
+	background-color: rgba(155, 0, 10, 0.7);
+}
+.Plus {
+	background-color: rgba(0, 230, 64, 0.7);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.Plus:hover {
+	background-color: rgba(0, 170, 48, 0.7);
+}
+.BudgetInput input {
+	height: 70px;
+	width: 35%;
+	padding: 1rem 1.25rem;
+	font-size: 1rem;
+	background: #eee;
+	outline: none;
+	border: none;
+}
+.BudgetInput input:focus {
+	background-color: rgb(211, 211, 211);
+}
+
+@media (max-width: 900px) {
+	.BudgetInput {
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 0.25rem;
+	}
+	.BudgetInput input {
+		height: 60px;
+		width: 45%;
+		padding: 0.75rem 1rem;
+		font-size: 0.9rem;
+		background: #eee;
+		outline: none;
+		border: none;
+		margin-bottom: 1rem;
+	}
+	.BtnContainer {
+		flex-direction: row;
+	}
+	.BtnContainer button {
+		height: 40px;
+		width: 60px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+	.Plus {
+		background-color: rgba(0, 230, 64, 0.7);
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 0;
+		border-top-right-radius: 0;
+	}
+	.Minus {
+		background-color: rgba(207, 0, 15, 0.7);
+		border-bottom-right-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+	}
+}

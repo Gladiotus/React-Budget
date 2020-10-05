@@ -1,0 +1,52 @@
+.Budget {
+	width: 60%;
+	height: 60%;
+	max-width: 1200px;
+	max-height: 1000px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
+	padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.Budget > button {
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	background: rgba(0, 0, 0, 0.2);
+	border: none;
+	outline: none;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.Budget > button:hover,
+.Budget > button:active {
+	background: rgba(0, 0, 0, 0.3);
+}
+.TotalBudget {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}
+
+.hideBudget {
+	display: none;
+}
+.positiveBudget {
+	color: chartreuse;
+}
+.negativeBudget {
+	color: red;
+}
+@media (max-width: 900px) {
+	.Budget {
+		width: 100%;
+		height: 100%;
+		padding-top: 1rem;
+	}
+}
